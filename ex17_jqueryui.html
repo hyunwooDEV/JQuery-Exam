@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/jquery-ui.js"></script>
+
+    <style>
+
+        body {
+            padding: 100px;
+        }
+
+        #a1 {
+            width: 400px;
+        }
+
+        * {
+            outline: none;
+        }
+
+        #p2 > div {
+            transition: all 1s linear;
+        }
+
+
+
+        #color {
+            margin-top: 50px;
+        }
+
+        #color > div {
+            width: 500px;
+            margin: 15px 0px;
+            height: 5px;
+        }
+
+        #color > div > span {
+            width: 20px;
+            height: 13px;
+        }
+
+        
+
+    </style>
+
+</head>
+<body>
+    <!-- ex17_jqueryui_.html -->
+
+    <h1>jQuery > Widgets(=Controls)</h1>
+
+    <h2>Accordion</h2>
+
+    <div id="a1">
+        <!-- ((h3>lorem3)+(div>lorem100))*3 -->
+        <h3>Lorem, ipsum dolor.</h3>
+        <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi culpa vel molestias incidunt officiis aut deserunt quas id nam dicta aspernatur itaque laudantium accusantium, vero eveniet nesciunt impedit aliquid voluptatem neque nobis. Nulla, culpa ex laudantium error quibusdam omnis necessitatibus nesciunt assumenda, fuga veritatis saepe ducimus soluta voluptate reiciendis beatae laborum, consectetur porro! Ea, repellendus. Numquam rerum dolorem odit tempore, ut corrupti aliquid necessitatibus reiciendis delectus, dolor eos aut iusto a tempora debitis quidem facere eum, eius veniam officiis quod temporibus repudiandae tenetur unde! Ab, animi exercitationem dolor a ullam porro dicta labore, impedit soluta aliquid accusantium voluptatem inventore unde.</div>
+        <h3>Error, ut accusantium?</h3>
+        <div>Culpa ad, modi error incidunt delectus tempore fuga minima doloribus iusto laboriosam dolore praesentium eligendi! Quam ea illum sapiente nobis est, nulla, vitae, alias ullam delectus quos dolore repellat iusto quisquam laborum omnis quas eaque inventore hic amet reiciendis modi. Odit cumque beatae asperiores ducimus eveniet est deleniti nesciunt laudantium deserunt eaque, sit nulla ab distinctio expedita doloremque iste! Commodi vel distinctio ipsum harum dolor et, voluptatem ex perspiciatis exercitationem porro quod soluta ipsa impedit doloremque quaerat autem nobis. Quod, magnam rem dicta, inventore optio nesciunt libero quasi ab tempore nihil a magni voluptatum suscipit ipsum ipsa eligendi necessitatibus totam.</div>
+        <h3>Delectus, alias ullam.</h3>
+        <div>Totam dolorum a ipsam officia repudiandae omnis quaerat sed natus laborum vel nemo, doloremque nulla, necessitatibus laudantium modi labore iusto exercitationem! Praesentium, tempore? Ea sed nam, facilis quaerat porro odio excepturi! Maiores alias harum provident optio debitis amet mollitia magni? Alias quae tempore optio hic nam mollitia, perferendis nemo laborum rerum saepe, similique perspiciatis quisquam odio magni recusandae ipsam consequuntur minima aut? Blanditiis vero eveniet eaque iure ducimus, assumenda dolor ea, quam placeat temporibus nam nostrum dignissimos dolore laudantium optio animi praesentium magnam ut enim quasi hic. Delectus quasi veritatis voluptatem quas commodi enim, maiores architecto, dolores itaque odit soluta?</div>
+        
+    </div>
+
+
+    <h2>Buttons</h2>
+
+    <input type="button" value="Save" id="btn1" class="btn">
+    <input type="button" value="Cancel" id="btn2" class="btn">
+
+    <br><br>
+
+    <div id="b1">
+        <input type="button" value="Save" id="btn3" class="btn">
+        <input type="button" value="Cancel" id="btn4" class="btn">
+    </div>
+
+    <br><br>
+
+    <a href="http://google.com" class="btn">Google</a>
+
+    <br><br>
+
+    <input type="text" class="btn">
+
+
+    <h2>Checkbox & Radio</h2>
+
+    <div id="c1">
+        <label for="cb1">Class</label>
+        <input type="checkbox" id="cb1" class="cb">
+        <label for="cb2">Method</label>
+        <input type="checkbox" id="cb2" class="cb">
+        <label for="cb3">Interface</label>
+        <input type="checkbox" id="cb3" class="cb">
+    </div>
+
+    <br>
+    
+    <div id="c2">
+        <label for="rb1">Class</label>
+        <input type="radio" id="rb1" class="rb" name="rb">
+        <label for="rb2">Method</label>
+        <input type="radio" id="rb2" class="rb" name="rb">
+        <label for="rb3">Interface</label>
+        <input type="radio" id="rb3" class="rb" name="rb">
+    </div>
+
+
+    <h2>Progressbar</h2>
+
+    <div id="p1"></div>
+    <br>
+    <div id="p2"></div>
+    <br>
+    <progress value=".3"></progress>
+
+
+
+
+    <h2>Datepicker</h2>
+
+    <input type="text" id="date1">
+    <br><br>
+    <div id="date2"></div>
+
+
+
+
+
+    <h2>Dialog</h2>
+
+    <input type="button" value="확인" id="btn5">
+    <div id="dialog">
+        안녕하세요. 홍길동입니다.
+    </div>
+
+
+
+
+    <h2>Select</h2>
+
+    <select id="sel1">
+        <option>맑음</option>
+        <option>흐림</option>
+        <option>눈</option>
+        <option>흐림 뒤 맑음</option>
+    </select>
+
+
+
+
+    <h2>Slider</h2>
+
+    <div id="slider1"></div>
+    <div id="slider1value"></div>
+
+
+    <div id="color">
+        <div id="slider2" title="빨강"></div>
+        <div id="slider3" title="녹색"></div>
+        <div id="slider4" title="파랑"></div>
+    </div>
+
+    <br><br>
+
+    <div id="slider5" title="가격 범위를 선택하세요."></div>
+
+
+
+    <h2>Spinner</h2>
+
+    <input type="text" id="age" title="나이를 입력하세요.">
+    <input type="number">
+
+
+
+    <h2>Tab</h2>
+
+    <div id="tab1">
+        <ul>
+            <li><a href="#page1">HTML</a></li>
+            <li><a href="#page2">CSS</a></li>
+            <li><a href="#page3">JavaScript</a></li>
+        </ul>
+        <div id="page1">
+            <h1>HTML</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium blanditiis totam molestiae id fuga provident facilis at illo dolorum delectus ex, repellendus, ut aliquam inventore eaque officia sequi dolor. Consequuntur libero assumenda omnis hic, provident laudantium, iusto neque, commodi dignissimos rerum quaerat ab facilis accusantium aliquam deserunt. Suscipit, illum quas. Magni tenetur quae minima amet. Nihil fugit laboriosam vel. Saepe nobis reiciendis, quis distinctio dolorem qui quasi nihil, ea possimus provident earum minima amet ducimus quidem pariatur nemo explicabo consequatur? Veniam facere provident molestiae nulla voluptas, maiores atque quam excepturi recusandae dolor quaerat consequuntur a repellat nemo amet ea laudantium.
+
+                <hr>
+                <input type="button" value="CSS 보기" id="btnNext"> 
+            </p>
+        </div>
+        <div id="page2">
+            <h1>CSS</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore animi reiciendis exercitationem dolore excepturi earum incidunt! Suscipit ratione itaque culpa doloremque commodi, omnis dolorum perspiciatis nobis eveniet impedit, mollitia sapiente possimus nam explicabo molestiae reiciendis vel corporis at quod distinctio eum sit. Eius alias, natus maiores commodi doloribus inventore a. Obcaecati quasi reiciendis dicta, harum veritatis commodi minus reprehenderit officiis corrupti dolores illo maxime atque quae ullam velit a ab nobis eaque in minima quisquam, autem assumenda provident vero. Doloremque neque distinctio et velit, laboriosam adipisci dolorum dicta molestias. Quos minima voluptas ipsa sit, tempore ex quia recusandae hic iure.</p>
+        </div>
+        <div id="page3">
+            <h1>JavaScript</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolor nisi quia nostrum. Quaerat asperiores quae pariatur a, alias atque illo, repellendus ipsum quis voluptas neque? Omnis in iusto odio quis accusamus numquam praesentium unde aliquam molestiae libero sint earum quidem dicta quia ratione magni, dolore maxime quaerat delectus. Modi molestiae corporis eveniet magni delectus mollitia sunt nisi debitis esse vitae, culpa autem dolore ipsum sit illum perspiciatis expedita exercitationem ducimus aliquam repellat deserunt nihil facere libero? Velit corrupti, vel dolor fugiat itaque voluptates incidunt? Suscipit sunt qui neque, quisquam vitae voluptate, sapiente ducimus rerum nostrum, asperiores nisi architecto magnam.</p>
+        </div>
+    </div>
+
+    
+    <script>
+        $.datepicker.setDefaults({
+        dateFormat: 'yy-mm-dd',	//날짜 포맷이다. 보통 yy-mm-dd 를 많이 사용하는것 같다.
+        prevText: '이전 달',	// 마우스 오버시 이전달 텍스트
+        nextText: '다음 달',	// 마우스 오버시 다음달 텍스트
+        closeText: '닫기', // 닫기 버튼 텍스트 변경
+        currentText: '오늘', // 오늘 텍스트 변경
+        monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],	//한글 캘린더중 월 표시를 위한 부분
+        monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],	//한글 캘린더 중 월 표시를 위한 부분
+        dayNames: ['일', '월', '화', '수', '목', '금', '토'],	//한글 캘린더 요일 표시 부분
+        dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],	//한글 요일 표시 부분
+        dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],	// 한글 요일 표시 부분
+        showMonthAfterYear: true,	// true : 년 월  false : 월 년 순으로 보여줌
+        yearSuffix: '년',	//
+        showButtonPanel: true,	// 오늘로 가는 버튼과 달력 닫기 버튼 보기 옵션
+//        buttonImageOnly: true,	// input 옆에 조그만한 아이콘으로 캘린더 선택가능하게 하기
+//        buttonImage: "images/calendar.gif",	// 조그만한 아이콘 이미지
+//        buttonText: "Select date"	// 조그만한 아이콘 툴팁
+    });
+
+
+
+        $("#tab1").tabs({
+            active: 0
+        });
+
+        $("#btnNext").click(function() {
+            $("#tab1").tabs({
+                active: 1
+            });
+        });
+
+
+
+
+
+        $("*[title]").tooltip({
+            track: true,
+            // show: {
+            //     effect: "explode"
+            // },
+            hide: {
+                effect: "explode"
+            }
+        });
+
+        //$("#age").tooltip();
+
+
+
+
+
+
+        $("#age").spinner({
+            min: 0,
+            max: 100,
+            step: 10
+        });
+
+
+
+
+
+        //멀티 슬라이더(엄지 버튼 2개)
+        $("#slider5").slider({
+            range: true,
+            min: 100000,
+            max: 1000000,
+            values: [200000, 500000],
+            step: 100000,
+            //slide(움직이는 동안), change(움직이고 난뒤)
+            change: function(event, ui) {
+                console.log("최저가: ", ui.values[0]);
+                console.log("최고가: ", ui.values[1]);
+            }
+        });
+
+
+
+        $("#color > div").slider({
+            min: 0,
+            max: 255,
+            value: 255,
+            slide: function(event, ui) {
+                
+                var r = $("#slider2").slider("value");
+                var g = $("#slider3").slider("value");
+                var b = $("#slider4").slider("value");
+
+                $("body").css("background-color", `rgb(${r},${g},${b})`);
+
+            }
+        });
+
+
+
+
+        $("#slider1").slider({
+            slide: function(event, ui) {
+                $("#slider1value").text(ui.value);
+            },
+            min: 0,
+            max: 1000,
+            step: 100
+        });
+
+
+
+
+
+        $("#sel1").selectmenu();
+
+
+
+
+
+        $("#dialog").hide();
+
+        $("#btn5").click(function() {
+            
+            //$("#dialog").show();
+
+            //대화 상자, Dialog Box
+            //1. modal
+            // - 자식창이 보일 때 부모창이 포커스를 가질 수 없는 상태
+            // - 자식의 업무가 끝나야 부모로 돌아갈 수 있다.
+            // - 부모 -> 자식 -> 부모 : 시퀀스 업무
+
+            //2. modeless
+            // - 자식창이 보여도 부모창이 포커스를 가질 수 있는 상태
+            // - 부모의 업무와 자식의 업무를 병행 가능
+
+            $("#dialog").dialog({
+                title: "제목입니다.",
+                width: 300,
+                height: 250,
+                draggable: false,
+                resizable: false,
+                modal: true,
+                buttons: {
+                    // "text": function() {
+                    //     alert()
+                    // }
+                    "Save": function() {
+                        alert("저장 완료");
+                    },
+                    "Cancel": function() {
+                        $("#dialog").dialog("close");
+                    }
+                }
+            });
+
+        });
+
+
+
+
+
+
+        $("#date1, #date2").datepicker({
+            dateFormat: "yy-mm-dd",
+            //minDate: "2021-01-10",
+            //maxDate: "2021-01-29"
+            //minDate: "-5",
+            //maxDate: "+5"
+            minDate: "-1M -5D",
+            maxDate: "+1M +5D"
+            
+        });
+
+
+
+
+
+
+
+
+
+        $("#p1").progressbar({
+            value: 300
+        });
+
+        $("#p2").progressbar();
+        $("#p2").click(function() { 
+            $("#p2").progressbar({ value: 90 });
+        });
+
+
+
+
+
+
+        $(".cb, .rb").checkboxradio();
+        $("#c2").controlgroup();
+
+
+
+
+
+        $("#btn1").button();
+
+        $(".btn").button();
+        $("#b1").controlgroup();
+
+
+
+
+
+        $("#a1").accordion({
+            collapsible: true
+        });
+
+
+
+    </script>
+
+</body>
+</html>
